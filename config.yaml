@@ -42,8 +42,6 @@ params:
   tocopen: false
 
   assets:
-    # disableHLJS: true
-    # disableFingerprinting: true
     favicon: "assets/images/panda.png"
     favicon16x16: "assets/images/panda.png"
     favicon32x32: "assets/images/panda.png"
@@ -55,7 +53,6 @@ params:
     icon: assets/images/panda.png
     iconHeight: 20
 
-  # profile-mode
   profileMode:
       enabled: true
       title: "Viki Pranata"
@@ -67,10 +64,6 @@ params:
       buttons:
           - name: Blogs
             url: https://blog.syslog.my.id
-
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
 
   socialIcons:
     - name: email
@@ -91,36 +84,21 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
+menu:
+  main:
+    - identifier: About
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: Posts
+      name: Posts
+      url: https://blog.syslog.my.id
+      weight: 20
+
   editPost:
     URL: "https://github.com/vikipranata/vikipranata.github.io/blob/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
-
-  # for search
-  # https://fusejs.io/api/options.html
-  fuseOpts:
-    isCaseSensitive: false
-    shouldSort: true
-    location: 0
-    distance: 1000
-    threshold: 0.4
-    minMatchCharLength: 0
-    keys: ["title", "permalink", "summary", "content", "tags"]
-
-menu:
-  main:
-    - identifier: Posts
-      name: Posts
-      url: https://blog.syslog.my.id
-      weight: 10
-    - identifier: About
-      name: About
-      url: /about/
-      weight: 20
-    - identifier: Search
-      name: Search
-      url: /search/
-      weight: 30
 
 pygmentsUseClasses: true
 markup:
