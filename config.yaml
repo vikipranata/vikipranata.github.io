@@ -1,0 +1,133 @@
+baseURL: "https://www.syslog.my.id/"
+title: "Viki Pranata"
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Viki Pranata
+  description: "This is my journal"
+  keywords: [Blog, Portfolio, PaperMod]
+  author: Me
+  images: "assets/images/profile.jpg"
+  DateFormat: "February 2, 1997"
+  defaultTheme: light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    # disableHLJS: true
+    # disableFingerprinting: true
+    favicon: "assets/images/panda.png"
+    favicon16x16: "assets/images/panda.png"
+    favicon32x32: "assets/images/panda.png"
+    apple_touch_icon: "assets/images/panda.png"
+    safari_pinned_tab: "assets/images/panda.png"
+
+  label:
+    text: "Home"
+    icon: assets/images/panda.png
+    iconHeight: 20
+
+  # profile-mode
+  profileMode:
+      enabled: true
+      title: "Viki Pranata"
+      subtitle: "Positive life start from positive mind."
+      imageUrl: "assets/images/profile.jpg"
+      imageTitle: "me"
+      imageWidth: 200
+      imageHeight: 200
+      buttons:
+          - name: Blogs
+            url: https://blog.syslog.my.id
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: email
+      url: "mailto:helovikipranata@gmail.com"
+    - name: telegram
+      url: "https://t.me/vikipranata"
+    - name: instagram
+      url: "https://instagram.com/vikipranata"
+    - name: twitter
+      url: "https://twitter.com/vikipranata"
+    - name: github
+      url: "https://github.com/vikipranata"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/vikipranata"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/vikipranata/vikipranata.github.io/blob/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content", "tags"]
+
+menu:
+  main:
+    - identifier: Posts
+      name: Posts
+      url: https://blog.syslog.my.id
+      weight: 10
+    - identifier: About
+      name: About
+      url: /about/
+      weight: 20
+    - identifier: Search
+      name: Search
+      url: /search/
+      weight: 30
+
+pygmentsUseClasses: true
+markup:
+  highlight:
+    # noClasses: false
+    # anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
