@@ -78,6 +78,11 @@ params:
       url: "https://github.com/vikipranata"
     - name: linkedin
       url: "https://www.linkedin.com/in/vikipranata"
+  
+  editPost:
+  URL: "https://github.com/vikipranata/vikipranata.github.io/blob/main/content"
+  Text: "Suggest Changes"
+  appendFilePath: true
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -94,11 +99,6 @@ menu:
       name: Posts
       url: https://blog.syslog.my.id
       weight: 20
-
-  editPost:
-    URL: "https://github.com/vikipranata/vikipranata.github.io/blob/main/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
 
 pygmentsUseClasses: true
 markup:
