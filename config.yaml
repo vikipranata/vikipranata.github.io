@@ -64,6 +64,8 @@ params:
       buttons:
           - name: Blogs
             url: https://blog.syslog.my.id
+          - name: Badges
+            url: "https://www.credly.com/users/vikipranata"
 
   socialIcons:
     - name: email
