@@ -41,6 +41,10 @@ params:
   showtoc: false
   tocopen: false
 
+  analytics:
+      google:
+          SiteVerificationTag: G-FWN6N1CDFZ
+
   assets:
     favicon: "assets/images/panda.png"
     favicon16x16: "assets/images/panda.png"
